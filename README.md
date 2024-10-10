@@ -25,7 +25,7 @@ _____
 | 19. Вывести текущую дату и время                                                                    | `date`                                                          |
 
 
-### Отправить http запрос на сервер - http://162.55.220.72:5005/terminal-hw-request
+### Отправить http запрос на сервер - `http://162.55.220.72:5005/terminal-hw-request`
 ```
 curl http://162.55.220.72:5006/terminal-hw-request
 curl http://162.55.220.72:5006/get_method?name=$Vlad&age=$28
