@@ -1,0 +1,51 @@
+  history | sed -n '370, 455p' > HW_history2.txt
+
+  370  mkdir dir_1
+  371  cd dir_1/
+  372  locate 1.txt
+  373  mkdir inner_dir_1
+  374  pwd
+  375  touch tf_1.txt
+  376  cat >> tf_2.txt
+  377  cd inner_dir_1/
+  378  cat >> tf_3.txt
+  379  cd ..
+  380  mkdir dir_1
+  381  cd dir_1/
+  382  mkdir inner_dir_1
+  383  pwd
+  384  touch tf_1.txt
+  385  cat > tf_2.txt
+  386  cd inner_dir_1/
+  387  cat > tf_3.txt
+  388  cat >> tf_3.txt 
+  389  cat >> tf_3.txt 
+  390  cat >> ../tf_2.txt 
+  391  cat >> tf_3.txt 
+  392  cat >> ../tf_2.txt 
+  393  for i in {1..15}; do echo "Строка номер $i" >> tf_4.txt; done
+  394  seq 13 > tF_5.txt
+  395  cd ..
+  396  cat inner_dir_1/tf_3.txt 
+  405  find ./ -name "*tf*"
+  406  find ./ -iname "*tf*"
+  407  grep "sec" *
+  412  grep -i "sec" *
+  413  grep -w "sec" *
+  414  grep -iw "sec" *
+  415  grep "second" *
+  416  grep -i "second" *
+  417  grep -r "second" *
+  418  grep -l "second" *
+  419  grep -v "second" *
+  420  grep -L "second" *
+  421  tail -n 4 inner_dir_1/tf_3.txt 
+  422  head -n 4 inner_dir_1/tF_5.txt 
+  426  mkdir folder && cat > folder/file.txt
+  448  grep -rl "sec" . *.txt | xargs mv -t folder/
+  450  grep -rl "sec" . *.txt | xargs cp -t .
+  453  grep "sec" *.txt > copied_text.txt
+  454  grep -l "sec" *.txt | xargs rm
+  457  echo 'Good Job!!'
+
+  

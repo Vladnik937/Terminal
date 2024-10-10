@@ -1,0 +1,40 @@
+  history | sed -n '312, 360p' > HW_history1.txt
+
+  312  pwd
+  313  mkdir folder_1
+  314  cd folder_1/
+  315  mkdir sfolder{1,2,3}
+  316  cd sfolder1
+  317  touch 1.txt 2.txt 3.txt 4.json 5.json
+  318  mkdir fold{1,2,3}
+  319  ls
+  320  cat > 1.txt 
+  321  cd ..
+  322  mv sfolder1/1.txt sfolder1/2.txt sfolder1/fold1/
+  323  cp sfolder1/4.json sfolder1/5.json sfolder1/fold2/
+  324  find ./ -name 5.json
+  327  tail -n +1 -f sfolder1/3.txt | grep -n ""
+  331  head -n 1 sfolder1/3.txt 
+  332  tail -n 2 sfolder1/3.txt 
+  333  less sfolder1/3.txt
+  334  curl http://162.55.220.72:5005/terminal-hw-request
+  335  date
+  345  vim script.sh
+  346  #!/bin/bash
+  347  echo "Зайти в папку folder_1"
+  348  cd folder_1/
+  349  echo "Создать 3 папки"
+  350  mkdir script_folder{1,2,3}
+  351  echo "Зайти в папку script_folder1"
+  352  cd script_folder1/
+  353  echo "Создать 5 файлов (3 txt, 2 json)"
+  354  touch 1.txt 2.txt 3.txt 4.json 5.json
+  355  echo "Создать 3 папки"
+  356  mkdir folder{1,2,3}
+  357  echo "Вывести список содержимого папки"
+  358  ls
+  359  echo "Переместить 2 файла из script_folder1 в script_folder1/folder1/"
+  360  mv 1.txt 2.txt /folder1/
+
+464  curl http://162.55.220.72:5006/get_method?name=$Vlad&age=$28
+
