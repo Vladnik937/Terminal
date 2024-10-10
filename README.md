@@ -32,6 +32,9 @@ curl http://162.55.220.72:5006/get_method?name=$Vlad&age=$28
 ```
 ### Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 ```
+vim script.sh
+```
+```
 #!/bin/bash
 echo "Зайти в папку folder_1"
 cd folder_1/
@@ -47,6 +50,10 @@ echo "Вывести список содержимого папки"
 ls
 echo "Переместить 2 файла из script_folder1 в script_folder1/folder1/"
 mv 1.txt 2.txt folder1/
+```
+Запустить скрипт
+```
+sh script.sh
 ```
 _____
 ## HomeWork_2
